@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(15, 21, 46);
+}
+.clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clock .display {
+    margin: 10vh 0 0;
+    color: black;
+    background-color: #D9D9D9;
+    width: 400px;
+    height: 77px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display .timer {
+    font-size: xx-large;
+    font-style: arial;
+}
+.buttons {
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+ }
+.buttons .button {
+    color: rgb(0, 94, 141);
+    font-size: 35px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 100%;
+    background-color: #b4b4b4;
+    width: 100px;
+    height: 100px;
+    transition: all 0.7s;
+}
+.buttons .aut {
+    margin-bottom: 50px;
+}
+.buttons .button:hover {
+    font-size: 55px;
+    color: rgb(0, 145, 181);
+    background-color: #D9D9D9;
+    line-height: 105px;
+    width: 105px;
+    height: 105px;
+}
