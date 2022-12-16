@@ -4,7 +4,10 @@ var clock = {
     minutes: 0,
     hours: 0,
 
-
+    aviso(mensagem) 
+    {
+        mensagem ? window.alert(mensagem) : window.alert('Finalizou')
+    },
     atualizar() {
 
         const spaceHours = document.querySelector('.hours');
@@ -58,7 +61,6 @@ var clock = {
     play() 
     {   
         clock.diminuir()
-
-        clock.seconds > 0 ? setTimeout( clock.play, 1000 ) : clearInterval( clock.play )
+        clock.seconds > 0 || clock.minutes > 0 || clock.hours > 0 ? setTimeout( clock.play, 1000 ) : setTimeout( clock.aviso, 1000 )
     }
 }
