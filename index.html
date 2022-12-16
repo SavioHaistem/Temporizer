@@ -11,12 +11,16 @@
 </head>
 <body>
     <header class="clock">
-        <div class="display"> <a class="time"> 00:00:00 </a> </div>
+        <div class="display">
+            <a class="hours"> 0: </a>
+            <a class="minutes"> 0 </a>
+            <a class="seconds"> :0 </a>
+        </div>
     </header>
     <main class="buttons">
-        <div class="button aut" onclick="TIMER.plustime()"> <i class="fa fa-plus"></i> </div>
-        <div class="button" onclick="TIMER.play()"> <i class="fa fa-play"></i></div>
-        <div class="button aut" onclick="TIMER.minustime()"> <i class="fa fa-minus"></i> </div>
+        <div class="button aut" onclick="clock.adicionar()"> <i class="fa fa-plus"></i> </div>
+        <div class="button" onclick="clock.play()"> <i class="fa fa-play"></i></div>
+        <div class="button aut" onclick="clock.diminuir()"> <i class="fa fa-minus"></i> </div>
     </main>
 </body>
 </html>
